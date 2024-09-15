@@ -1,0 +1,151 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font to Arial for all text */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the header fills the top of the page */
+header {
+    background-color: lightblue;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't push content out */
+    display: flex;
+    justify-content: space-between; /* Center content horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+header h1 {
+    margin: 0; /* Remove default margins */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+header nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox for the list */
+    gap: 15px; /* Space between list items */
+}
+
+header nav ul li {
+    display: inline; /* Keep list items inline */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: darkblue; /* Link color */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Ensure the footer fills the bottom of the page */
+footer {
+    background-color: lightblue;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't push content out */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    gap: 20px; /* Space between heading and navigation */
+}
+
+footer h2 {
+    margin: 0; /* Remove default margins */
+}
+
+footer nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox for the list */
+    gap: 15px; /* Space between list items */
+}
+
+footer nav ul li {
+    display: inline; /* Keep list items inline */
+}
+
+footer nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: darkblue; /* Link color */
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Center the form on the page */
+form {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form horizontally and add top margin */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Round the corners */
+    background-color: #f9f9f9; /* Optional: Light background for form */
+}
+
+/* Make form elements closer together */
+form label, form input, form select, form textarea {
+    margin-bottom: 5px; /* Reduce spacing between elements */
+    display: block;
+    width: 100%; /* Make inputs and labels span the form's width */
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+    margin-top: 10px; /* Add some space above the button */
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the form labels */
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Optional: Style input fields for better readability */
+form input, form select, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Optional: Style input fields on focus */
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: lightblue;
+}
+
+/* Align the subscribe checkbox to the right and text to the left */
+form .subscribe-container {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: flex-end; /* Push the checkbox to the right */
+    margin-top: 10px;
+}
+
+form .subscribe-container label {
+    margin-right: 10px; /* Add space between the label and checkbox */
+}
